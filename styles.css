@@ -277,26 +277,84 @@ h1 {
 
 /* this is css for the not found page */
 /* this is for the modifying  */
-#error-message {
-    display: none; /* Hide error message initially */
-    text-align: center; /* Center-align the error message */
-    flex-direction: column; /* Arrange the elements in a column */
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
+
+
+
+@media only screen and (min-width:690px) {
+    #error-message {
+        display: none; /* Hide error message initially */
+        text-align: center; /* Center-align the error message */
+        flex-direction: column; /* Arrange the elements in a column */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+    }
+    
+    #error-message.active {
+        display: flex; /* Show error message when active */
+        flex-direction: column; /* Arrange the elements in a column */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+        color: white; /* Customize the appearance of your error message */
+        font-size: 25px; /* Adjust as needed */
+        margin-top: -299px;
+    }
+    
+    .error-image {
+        width: 250px; /* Adjust the width of the error image as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-top: -300px; /* Add some spacing between the message and the image */
+    }
 }
 
-#error-message.active {
-    display: flex; /* Show error message when active */
-    flex-direction: column; /* Arrange the elements in a column */
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
-    color: white; /* Customize the appearance of your error message */
-    font-size: 25px; /* Adjust as needed */
-    margin-top: -230px;
+@media only screen and (max-width:689px) {
+    #error-message {
+        display: none; /* Hide error message initially */
+        text-align: center; /* Center-align the error message */
+        flex-direction: column; /* Arrange the elements in a column */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+    }
+    
+    #error-message.active {
+        display: flex; /* Show error message when active */
+        flex-direction: column; /* Arrange the elements in a column */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+        color: white; /* Customize the appearance of your error message */
+        font-size: 25px; /* Adjust as needed */
+        margin-top: -250px;
+    }
+    
+    .error-image {
+        width: 250px; /* Adjust the width of the error image as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin-top: -350px; /* Add some spacing between the message and the image */
+    }
 }
 
-.error-image {
-    width: 250px; /* Adjust the width of the error image as needed */
-    height: auto; /* Maintain the aspect ratio */
-    margin-top: -275px; /* Add some spacing between the message and the image */
+@media only screen and (max-width: 369px) {
+    #error-message {
+        display: none; /* Hide error message initially */
+        text-align: center; /* Center-align the error message */
+        flex-direction: column; /* Arrange the elements in a column */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+    }
+
+    #error-message.active {
+        display: flex; /* Show error message when active */
+        flex-direction: column; /* Arrange the elements in a column */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+        color: white; /* Customize the appearance of your error message */
+        font-size: 25px; /* Adjust as needed */
+        margin-top: -20px;
+    }
+
+    .error-image {
+        width: 100%; /* Make the image responsive */
+        max-width: 250px; /* Set a maximum width */
+        height: auto; /* Maintain the aspect ratio */
+        margin-top: 20px; /* Adjust the spacing between the message and the image */
+    }
 }
